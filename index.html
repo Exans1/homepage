@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="font-awesome.css" rel="stylesheet">
+        <link href="font-awesome.min.css" rel="stylesheet">
+        <title>Exans</title>
+
+        <!-- Dragg and Drop w3school-->
+        <script>
+          function allowDrop(ev) {
+            ev.preventDefault();
+          }
+
+          function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+            var element = document.getElementById("drag1");
+            element.classList.remove("bottomright");
+          }
+
+          function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
+          }
+          </script>
+    </head>
+    <body>
+        <!-- CUSTOM NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Exans</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="travel.html">Travel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search" id="form">
+                  <input class="form-control me-2"  type="search" id="query" name="q" placeholder="Search..." aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <script>
+                  const f = document.getElementById('form');
+                  const q = document.getElementById('query');
+                  const google = 'https://www.google.com/search?q=';
+
+                  function submitted(event) {
+                    event.preventDefault();
+                    const url = google + '+' + q.value;
+                    const win = window.open(url, '_blank');
+                    win.focus();
+                  }
+
+                  f.addEventListener('submit', submitted);
+                </script>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- /END CUSTOM NAVBAR -->
+
+        <div class="content" style="background-image: url('img/MePic/Ca/US (17).jpg');padding-bottom: 710px">
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbarz">
+          <div class="center">
+            <a href="#">Work1</a>
+            <a href="#">Work2</a>
+            <a href="#">Work3</a>
+            <a href="#">Work4</a>
+          </div>
+        </div>
+          <!-- Web content -->
+        <div>
+          <div class="row" >
+            <div class="sidez">
+              <h2>About Me</h2>
+              <h5>Photo of me:</h5>
+              <div>
+                <div id="introImages" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#introImages" data-slide-to="0" class="active"></li>
+                  <li data-target="#introImages" data-slide-to="1"></li>
+                  <li data-target="#introImages" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/MePic/Scenic/Fixed/f1.jpg" alt="First slide" style="height:350px;">
+                    <div class="carousel-caption d-none d-md-block picTextBackground">
+                      <h5>Top of the glass tower</h5>
+                      <p>Sitting on the glass floors of the tallest building of Korea with my friend Kyle.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/MePic/Scenic/Fixed/f2.jpg" alt="Second slide" style="height:350px;">
+                    <div class="carousel-caption d-none d-md-block picTextBackground">
+                      <h5>Flight to Jeju Island</h5>
+                      <p>My friends and I makeing the most of it on the flight to the Hawaii of Korea.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/MePic/Scenic/Fixed/f3.jpg" alt="Third slide" style="height:350px;">
+                    <div class="carousel-caption d-none d-md-block picTextBackground">
+                      <h5>Cool Bridge</h5>
+                      <p>We saw this on the way to see the move Pokemon Detective Pikachu.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/MePic/Scenic/Fixed/f4.jpg" alt="Fourth slide" style="height:350px;">
+                    <div class="carousel-caption d-none d-md-block picTextBackground">
+                      <h5>Subway Ride</h5>
+                      <p>Where we were going nobody knows.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/MePic/Scenic/Fixed/f5.jpg" alt="Fifth slide" style="height:350px;">
+                    <div class="carousel-caption d-none d-md-block picTextBackground">
+                      <h5>Beer Hall Germany</h5>
+                      <p>I was cut off from alcohol for drinking too much the night prior.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/MePic/Scenic/Fixed/f6.jpg" alt="Sixth slide" style="height:350px;">
+                    <div class="carousel-caption d-none d-md-block picTextBackground">
+                      <h5>Berlin Wall</h5>
+                      <p>Took a photo next to a more complete piece of the Berlin Wall that was moved next to a museum.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/MePic/Scenic/Fixed/f7.jpg" alt="Seventh slide" style="height:350px;">
+                    <div class="carousel-caption d-none d-md-block picTextBackground">
+                      <h5>Dragged in</h5>
+                      <p>Pushed a friend into the pool but, he took me in with him.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/MePic/Scenic/Fixed/f8.jpg" alt="Eighth slide" style="height:350px;">
+                    <div class="carousel-caption d-none d-md-block picTextBackground">
+                      <h5>We go Together</h5>
+                      <p>John wanted to throw me in the pool so I held on to Garrett.</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#introImages" role="button" data-slide="prev" style="height:350px;">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only"></span>
+                </a>
+                <a class="carousel-control-next" href="#introImages" role="button" data-slide="next" style="height:350px;">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only"></span>
+                </a>
+              </div>
+
+               <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+               <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                  integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                  crossorigin = "anonymous">
+               </script>
+
+               <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                  integrity = "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                  crossorigin = "anonymous">
+               </script>
+
+               <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                  integrity = "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                  crossorigin = "anonymous">
+               </script>
+
+              </div>
+              <p>Photo of me durring my travels.</p>
+              <h3>My Education</h3>
+
+              <div class="pframe center" style="height:60px;" role="button"><a  href="#" class=" pframe1">Embry-Riddle University</a></div><br>
+              <div class="pframe center" style="height:60px;" role="button"><a  href="#" class=" pframe1">Coder Camps</a></div><br>
+              <div class="pframe center" style="height:60px;" role="button"><a  href="#" class=" pframe1">edX HarvardX CS50W</a></div><br>
+            </div>
+            <div class="main">
+              <h2>TITTLE OF THING</h2>
+              <h5>Title description, Dec 7, 2021</h5>
+              <div class="pframe" style="height:200px;">Image</div>
+              <p>Some text..</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <br>
+              <h2>TITLE THING B4</h2>
+              <h5>Title description, Sep 2, 2017</h5>
+              <div class="pframe" style="height:200px;">Image</div>
+              <p>Some text..</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer" style="text-align: center;">
+
+          <div class="container center" >
+            <section id="end" class="section-footer center">
+              <div class="container centered ptb">
+                <div class="col-md-offset-3">
+                  <h3>Seans Pages</h3>
+                  <p>Mellentesque habitant morbi tristique senectus<br/> et netus et malesuada famesac turpis egestas.</p>
+                  <p class="mt">
+                    <a href="https://www.facebook.com/shawn.kim.7583">  <i class="fa fa-dribbble"></i></a>
+                    <a href="https://www.instagram.com/sleepingsean/">  <i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter">  </i></a>
+                  </p>
+                  <p>Copyright &copy; - <strong> Exans </strong> All rights reserved.</p>
+                  <div class="credits">
+                    Created for cs50 by <a href="#">Sean Kim</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+        </div>
+    </body>
+</html>

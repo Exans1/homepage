@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="font-awesome.css" rel="stylesheet">
+        <link href="font-awesome.min.css" rel="stylesheet">
+        <title>Exans</title>
+
+        <!-- Dragg and Drop w3school-->
+        <script>
+          function allowDrop(ev) {
+            ev.preventDefault();
+          }
+
+          function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+            var element = document.getElementById("drag1");
+            element.classList.remove("bottomright");
+          }
+
+          function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
+
+          }
+          </script>
+    </head>
+    <body>
+        <!-- CUSTOM NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Exans</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="travel.html">Travel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search" id="form">
+                  <input class="form-control me-2"  type="search" id="query" name="q" placeholder="Search..." aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <script>
+                  const f = document.getElementById('form');
+                  const q = document.getElementById('query');
+                  const google = 'https://www.google.com/search?q=';
+
+                  function submitted(event) {
+                    event.preventDefault();
+                    const url = google + '+' + q.value;
+                    const win = window.open(url, '_blank');
+                    win.focus();
+                  }
+
+                  f.addEventListener('submit', submitted);
+                </script>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- /END CUSTOM NAVBAR -->
+
+        <!-- Top Portion -->
+        <div class="content">
+          <div class="container">
+            <p></p>
+            <h1 class="display-1">My Travels</h1>
+            <p></p>
+
+
+                        <!-- slide start -->
+
+                        <div class="container">
+
+
+                          <div id="introImages" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#introImages" data-slide-to="0" class="active"></li>
+                              <li data-target="#introImages" data-slide-to="1"></li>
+                              <li data-target="#introImages" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/MePic/Scenic/Scenic (11).jpg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block picTextBackground">
+                                  <h5>Jeju Island</h5>
+                                  <p>Took this picture on my hike down from Hallasan.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="img/MePic/Scenic/Fixed/i (2).jpg" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block picTextBackground">
+                                  <h5>Jeju Island</h5>
+                                  <p>Image of Jeju Island from Hallasan volcano.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="img/MePic/Scenic/Fixed/i (3).jpg" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block picTextBackground">
+                                  <h5>Traditional Korean Village</h5>
+                                  <p>This village has renovated to preserve its authentic traditional look. No one really lives in this village; however, it is often used as a filming location for historic Korean dramas.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="img/MePic/Scenic/Fixed/i (4).jpg" alt="Fourth slide">
+                                <div class="carousel-caption d-none d-md-block picTextBackground">
+                                  <h5>Fourth slide label</h5>
+                                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="img/MePic/Scenic/Fixed/i (5).jpg" alt="Fifth slide">
+                                <div class="carousel-caption d-none d-md-block picTextBackground">
+                                  <h5>Fith slide label</h5>
+                                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="img/MePic/Scenic/Fixed/i (6).jpg" alt="Sixth slide">
+                                <div class="carousel-caption d-none d-md-block picTextBackground">
+                                  <h5>Sixth slide label</h5>
+                                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="img/MePic/Scenic/Fixed/i (7).jpg" alt="Seventh slide">
+                                <div class="carousel-caption d-none d-md-block picTextBackground">
+                                  <h5>Seventh slide label</h5>
+                                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="img/MePic/Scenic/Fixed/i (8).jpg" alt="Eighth slide">
+                                <div class="carousel-caption d-none d-md-block picTextBackground">
+                                  <h5>Eight slide label</h5>
+                                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#introImages" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#introImages" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only"></span>
+                            </a>
+                          </div>
+
+                           <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                           <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                              integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                              crossorigin = "anonymous">
+                           </script>
+
+                           <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                              integrity = "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                              crossorigin = "anonymous">
+                           </script>
+
+                           <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                              integrity = "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                              crossorigin = "anonymous">
+                           </script>
+
+                        </div>
+
+                        <!-- slide end -->
+                        <dic style="margin: 1px">
+                          <div class="container">
+                            <p> </p>
+                          </div>
+                        </dic>
+
+            <div class="media" >
+              <div class="containerz">
+              <img class="figure-img img-fluid rounded" src="img/korea.jpg" alt="Responsive image" style="max-height: 40%" >
+              <div class="overlay">
+                <div class="text"> Hello World</div>
+                <img id="drag1" class="bottomright" src="img/50.png" draggable="true" ondragstart="drag(event)" style="width: 10%;" >
+              </div>
+            </div>
+            <p></p>
+              <div class="media-body">
+                <h5 class="mt-0">Traditional Korean House</h5>
+                This image shows the traditional housing for the upper-middle class citizens of Korea. The image was put to distract my web visitor from the hidden page. Find the 50 and drag it to the correct spot. Will be very obvious when you have succeeded in this mission.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /END Top Portion -->
+
+        <!-- Drag and Drop -->
+        <div class="footer">
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="font-weight: bold;">This is CS</div>
+          <div class="container center" >
+            <section id="end" class="section-footer center">
+              <div class="container centered ptb">
+                <div class="col-md-offset-3">
+                  <h3>Seans Pages</h3>
+                  <p>Mellentesque habitant morbi tristique senectus<br/> et netus et malesuada famesac turpis egestas.</p>
+                  <p class="mt">
+                    <a href="https://www.facebook.com/shawn.kim.7583">  <i class="fa fa-dribbble"></i></a>
+                    <a href="https://www.instagram.com/sleepingsean/">  <i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter">  </i></a>
+                  </p>
+                  <p>Copyright &copy; - <strong> Exans </strong> All rights reserved.</p>
+                  <div class="credits">
+                    Created for cs50 by <a href="#">Sean Kim</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!-- /END Drag and Drop -->
+
+    </body>
+</html>

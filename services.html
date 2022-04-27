@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="font-awesome.css" rel="stylesheet">
+        <link href="font-awesome.min.css" rel="stylesheet">
+        <title>Exans-Help</title>
+    </head>
+    <body>
+        <!-- CUSTOM NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Exans</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="travel.html">Travel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search" id="form">
+                  <input class="form-control me-2"  type="search" id="query" name="q" placeholder="Search..." aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <script>
+                  const f = document.getElementById('form');
+                  const q = document.getElementById('query');
+                  const google = 'https://www.google.com/search?q=';
+
+                  function submitted(event) {
+                    event.preventDefault();
+                    const url = google + '+' + q.value;
+                    const win = window.open(url, '_blank');
+                    win.focus();
+                  }
+
+                  f.addEventListener('submit', submitted);
+                </script>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- /END CUSTOM NAVBAR -->
+
+        <div id="divImg">
+          <div class="content" style="background-color: transparent;">
+            <div class="container">
+              <p></p>
+              <h1 class="display-1" style="background-color: #f1f1f1; border-radius: 25px;">Guide Services</h1>
+              <p></p>
+
+            </div>
+          </div>
+
+          <div class="container" style="background-color: rgba(225, 215, 200, 0.9);">
+            <h2>Top 3 Most Popular Locations</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Activity</th>
+                  <th scope="col">Location</th>
+                  <th scope="col">Rating</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Kyochon Chicken</td>
+                  <td>Chiken and Beer</td>
+                  <td>Hongdae</td>
+                  <td>4.9/5.0</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Chang Deok Gung</td>
+                  <td>Historical Site</td>
+                  <td>Jongno</td>
+                  <td>4.7/5.0</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Bukchon Hanok Village</td>
+                  <td>Traditional Food and Culture</td>
+                  <td>Seoul</td>
+                  <td>4.6/5.0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+          <div class="container center" >
+            <section id="end" class="section-footer center">
+              <div class="container centered ptb">
+                <div class="col-md-offset-3">
+                  <h3>Seans Pages</h3>
+                  <p>Mellentesque habitant morbi tristique senectus<br/> et netus et malesuada famesac turpis egestas.</p>
+                  <p class="mt">
+                    <a href="https://www.facebook.com/shawn.kim.7583">  <i class="fa fa-dribbble"></i></a>
+                    <a href="https://www.instagram.com/sleepingsean/">  <i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter">  </i></a>
+                  </p>
+                  <p>Copyright &copy; - <strong> Exans </strong> All rights reserved.</p>
+                  <div class="credits">
+                    Created for cs50 by <a href="#">Sean Kim</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+    </body>
+</html>

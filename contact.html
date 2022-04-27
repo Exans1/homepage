@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="font-awesome.css" rel="stylesheet">
+        <link href="font-awesome.min.css" rel="stylesheet">
+        <title>Exans-Contact_Us</title>
+    </head>
+    <body>
+        <!-- CUSTOM NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Exans</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="travel.html">Travel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search" id="form">
+                  <input class="form-control me-2"  type="search" id="query" name="q" placeholder="Search..." aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <script>
+                  const f = document.getElementById('form');
+                  const q = document.getElementById('query');
+                  const google = 'https://www.google.com/search?q=';
+
+                  function submitted(event) {
+                    event.preventDefault();
+                    const url = google + '+' + q.value;
+                    const win = window.open(url, '_blank');
+                    win.focus();
+                  }
+
+                  f.addEventListener('submit', submitted);
+                </script>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- /END CUSTOM NAVBAR -->
+
+        <div class="content p-3">
+          <div class="container">
+            <div class="row mt3 presentation">
+              <div class="centered">
+                <i class="icon ion-ios7-paperplane-outline large-icon"></i>
+                <p></p>
+                <h1>CONTACT US</h1>
+                <hr>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <h3>Sean Kim</h3>
+              </div>
+
+              <div class="col-lg-4 col-md-4">
+                <p>Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since, when an unknown ristique senectus et netus.</p>
+              </div>
+
+              <div class="col-lg-4 col-md-4">
+                <p>
+                  <b>Address:</b>
+                  <pl>902 Main Street </pl><br/>
+                  <b>Telephone:</b>
+                  <pl>(213) 123-4567</pl>
+                </p>
+                <p><b>Email:</b>
+                  <pl>SeansfakeEmail@email.com</pl>
+                </p>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <!-- starts inputs-->
+
+        <div class="container">
+
+        <div class="content ">
+
+          <form class="needs-validation" novalidate>
+
+            <div class="row">
+
+              <div class="column side">
+                <div class="form-group">
+                  <label for="validationCustom01">First name</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+              </div>
+
+              <div class="column middle">
+                <div class="form-group">
+                  <label for="validationCustom02">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+              </div>
+
+              <div class="column side">
+                <div class="form-group">
+                  <label for="formControlInput1">Email address</label>
+                  <input type="email" class="form-control" id="formControlInput1" placeholder="name@example.com" required>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="column side">
+                <div class="form-group">
+                  <label for="validationCustom03">Address</label>
+                  <input type="text" class="form-control" id="validationCustom03" placeholder="Address" required>
+                </div>
+              </div>
+              <div class="column middle">
+                  <div class="form-group">
+                    <label for="validationCustom04">City</label>
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="City" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+
+              </div>
+              <div class="column side">
+                <div class="form-group">
+                  <div class="column side">
+                    <div class="form-group">
+                    <label for="validationCustom05">State</label>
+                      <input type="text" class="form-control" id="validationCustom05" placeholder="State" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid state.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column side">
+                    <div class="form-group">
+                      <label for="validationCustom06">Zip</label>
+                      <input type="text" class="form-control" id="validationCustom06" placeholder="Zip" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid zip.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+
+
+            <div class="form-group">
+              <label for="formControlSelect1">Reason for contacting me</label>
+              <select class="form-control" id="formControlSelect1" required>
+                <option value="">(Select One)</option>
+                <option value="1">Job Opening</option>
+                <option value="1">Website Questions</option>
+                <option value="1">Just Because</option>
+                <option value="1">Not this one</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="formControlTextarea1">Message</label>
+              <textarea class="form-control" id="formControlTextarea1" rows="7"></textarea>
+            </div>
+
+          <!-- Submiton and Check-->
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+
+        <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+
+        </div>
+      </div>
+</div>
+      <div class="footer">
+        <div class="container center" >
+          <section id="end" class="section-footer center">
+            <div class="container centered ptb">
+              <div class="col-md-offset-3">
+                <h3>Seans Pages</h3>
+                <p>Mellentesque habitant morbi tristique senectus<br/> et netus et malesuada famesac turpis egestas.</p>
+                <p class="mt">
+                  <a href="https://www.facebook.com/shawn.kim.7583">  <i class="fa fa-dribbble"></i></a>
+                  <a href="https://www.instagram.com/sleepingsean/">  <i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-twitter">  </i></a>
+                </p>
+                <p>Copyright &copy; - <strong> Exans </strong> All rights reserved.</p>
+                <div class="credits">
+                  Created for cs50 by <a href="#">Sean Kim</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </body>
+</html>
